@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Mohammad Talib Khan · Operations & Accommodation Leader</title>
+      <!-- ATS-friendly, dates restored, clean & professional -->
+      <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300..700&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+      <style>
+         * {
+         margin: 0;
+         padding: 0;
+         box-sizing: border-box;
+         }
+         body {
+         background: linear-gradient(135deg, #ecf2fa 0%, #d3deed 100%);
+         font-family: 'Inter', sans-serif;
+         padding: 40px 20px;
+         display: flex;
+         justify-content: center;
+         min-height: 100vh;
+         }
+         .cv-paper {
+         max-width: 1150px;
+         width: 100%;
+         background: white;
+         border-radius: 42px 42px 32px 32px;
+         box-shadow: 0 30px 60px rgba(0, 15, 40, 0.2);
+         overflow: hidden;
+         border: 1px solid rgba(255,255,255,0.7);
+         }
+         .hero-band {
+         background: linear-gradient(105deg, #0a2540 0%, #1b4160 100%);
+         padding: 30px 40px 20px 40px;
+         color: white;
+         }
+         .name-title h1 {
+         font-size: 3.2rem;
+         font-weight: 700;
+         letter-spacing: -1px;
+         line-height: 1;
+         background: linear-gradient(to right, #fff, #fde3b1);
+         -webkit-background-clip: text;
+         -webkit-text-fill-color: transparent;
+         background-clip: text;
+         }
+         .name-title h2 {
+         font-size: 1.5rem;
+         font-weight: 400;
+         color: #fad57e;
+         margin-top: 6px;
+         display: flex;
+         align-items: center;
+         gap: 15px;
+         flex-wrap: wrap;
+         }
+         .badge-ksa {
+         background: #d9a73b;
+         padding: 6px 20px;
+         border-radius: 60px;
+         font-size: 0.85rem;
+         font-weight: 700;
+         color: #0a2540;
+         display: inline-flex;
+         align-items: center;
+         gap: 8px;
+         }
+         .contact-row {
+         display: flex;
+         flex-wrap: wrap;
+         gap: 30px;
+         margin: 25px 0 15px;
+         background: rgba(255,255,255,0.1);
+         padding: 16px 24px;
+         border-radius: 60px;
+         backdrop-filter: blur(6px);
+         border: 1px solid rgba(255,230,170,0.3);
+         font-size: 0.95rem;
+         }
+         .contact-item {
+         display: flex;
+         align-items: center;
+         gap: 8px;
+         }
+         .contact-item i {
+         color: #ffdb8b;
+         width: 20px;
+         }
+         .action-bar {
+         display: flex;
+         flex-wrap: wrap;
+         gap: 12px;
+         margin: 15px 0 5px;
+         }
+         .btn {
+         background: rgba(255,255,255,0.15);
+         border: 1px solid rgba(255,215,120,0.3);
+         padding: 10px 25px;
+         border-radius: 60px;
+         font-weight: 500;
+         color: white;
+         text-decoration: none;
+         display: inline-flex;
+         align-items: center;
+         gap: 8px;
+         transition: 0.2s;
+         font-size: 0.9rem;
+         }
+         .btn-gold {
+         background: #d9a73b;
+         border-color: #ffda88;
+         color: #0a1e30;
+         font-weight: 600;
+         }
+         .btn:hover {
+         background: rgba(255,255,255,0.3);
+         transform: translateY(-2px);
+         }
+         .grid-main {
+         display: grid;
+         grid-template-columns: 1fr 2fr;
+         gap: 12px;
+         background: #f9fcff;
+         padding: 25px 30px 30px;
+         }
+         .card {
+         background: white;
+         border-radius: 28px;
+         padding: 24px;
+         margin-bottom: 20px;
+         box-shadow: 0 8px 18px rgba(0,25,50,0.04);
+         border: 1px solid #e9edf4;
+         }
+         .section-title {
+         font-weight: 700;
+         font-size: 1.1rem;
+         text-transform: uppercase;
+         letter-spacing: 1px;
+         color: #1d3f5c;
+         display: flex;
+         align-items: center;
+         gap: 8px;
+         border-bottom: 2px solid #f3c26b;
+         padding-bottom: 10px;
+         margin-bottom: 20px;
+         }
+         .section-title i {
+         color: #b8862c;
+         }
+         .summary {
+         color: #1c3346;
+         font-size: 0.92rem;
+         line-height: 1.6;
+         text-align: justify;
+         }
+         .skill-pills {
+         display: flex;
+         flex-wrap: wrap;
+         gap: 6px;
+         }
+         .skill-pill {
+         background: #eaf1fb;
+         color: #1f4b6e;
+         padding: 5px 16px;
+         border-radius: 50px;
+         font-size: 0.75rem;
+         font-weight: 500;
+         border: 1px solid #c8d9ec;
+         }
+         .lang-row {
+         display: flex;
+         gap: 20px;
+         font-weight: 500;
+         color: #1b3d57;
+         }
+         .edu-item {
+         margin-bottom: 14px;
+         }
+         .edu-item strong {
+         color: #0f344f;
+         }
+         .edu-detail {
+         font-size: 0.85rem;
+         color: #3b5570;
+         }
+         .exp-entry {
+         margin-bottom: 30px;
+         }
+         .exp-header {
+         display: flex;
+         flex-wrap: wrap;
+         align-items: baseline;
+         justify-content: space-between;
+         margin-bottom: 5px;
+         }
+         .exp-header h3 {
+         font-size: 1.2rem;
+         font-weight: 700;
+         color: #0f3b58;
+         }
+         .exp-date {
+         background: #f3c26b;
+         padding: 4px 16px;
+         border-radius: 60px;
+         font-size: 0.75rem;
+         font-weight: 700;
+         color: #0a2540;
+         letter-spacing: 0.3px;
+         }
+         .exp-sub {
+         font-weight: 600;
+         color: #8a723f;
+         font-size: 0.85rem;
+         margin-bottom: 12px;
+         }
+         .exp-duties {
+         list-style: none;
+         }
+         .exp-duties li {
+         font-size: 0.88rem;
+         margin-bottom: 8px;
+         padding-left: 20px;
+         position: relative;
+         color: #253e54;
+         }
+         .exp-duties li:before {
+         content: "▹";
+         position: absolute;
+         left: 0;
+         color: #b17f2b;
+         font-weight: 700;
+         }
+         @media print {
+         body { background: white; padding: 0; }
+         .cv-paper { box-shadow: none; border-radius: 0; }
+         .hero-band { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+         .btn, .action-bar { display: none; }
+         }
+         @media (max-width: 700px) {
+         .grid-main { grid-template-columns: 1fr; }
+         .hero-band { padding: 25px; }
+         }
+      </style>
+   </head>
+   <body>
+      <div class="cv-paper">
+         <!-- header with corrected Iqama -->
+         <div class="hero-band">
+            <div class="name-title">
+               <h1>MOHAMMAD TALIB KHAN</h1>
+               <h2>
+                  <span>Accommodation Incharge · Camp Boss · Operations Leader</span>
+                  <span class="badge-ksa"><i class="fas fa-saudi-riyal"></i> KSA specialist</span>
+               </h2>
+            </div>
+            <div class="contact-row">
+               <!-- Iqama corrected to 2434 9082 79 -->
+               <span class="contact-item"><i class="fas fa-id-card"></i> Iqama: 2434 9082 79</span>
+               <span class="contact-item"><i class="fas fa-map-pin"></i> Al Khobar, Saudi Arabia</span>
+               <span class="contact-item"><i class="fas fa-phone-alt"></i> +966 58 274 0152</span>
+               <span class="contact-item"><i class="fas fa-envelope"></i> amirskhap@gmail.com</span>
+               <span class="contact-item"><i class="fas fa-passport"></i> Passport: C8792993</span>
+            </div>
+            <div class="action-bar">
+               <a href="#" class="btn btn-gold" onclick="window.print();return false;"><i class="fas fa-file-pdf"></i> Download PDF (print)</a>
+               <a href="#" class="btn"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+               <a href="#" class="btn"><i class="fab fa-linkedin-in"></i> LinkedIn</a>
+            </div>
+         </div>
+         <!-- main content -->
+         <div class="grid-main">
+            <!-- LEFT COLUMN -->
+            <div class="left-col">
+               <div class="card">
+                  <div class="section-title"><i class="fas fa-bullseye"></i> Profile</div>
+                  <p class="summary">
+                     Results-oriented operations professional with <strong>8+ years in the Saudi market</strong>, bridging strategic management with hands-on accommodation & camp boss expertise. Proven track record in housing 150+ staff, fleet optimisation, KPI compliance, and multicultural team leadership. Adept at municipality audits and cost control.
+                  </p>
+                  <!-- Green box completely removed as requested -->
+               </div>
+               <div class="card">
+                  <div class="section-title"><i class="fas fa-cogs"></i> Core Competencies</div>
+                  <div class="skill-pills">
+                     <span class="skill-pill">Accommodation Management</span>
+                     <span class="skill-pill">Camp Boss</span>
+                     <span class="skill-pill">Fleet & Logistics</span>
+                     <span class="skill-pill">KPI & Cost Control</span>
+                     <span class="skill-pill">MS Office Expert</span>
+                     <span class="skill-pill">Inventory / Logs</span>
+                     <span class="skill-pill">Bookkeeping</span>
+                     <span class="skill-pill">Audit Compliance</span>
+                     <span class="skill-pill">Maintenance Planning</span>
+                     <span class="skill-pill">Occupancy Tracking</span>
+                     <span class="skill-pill">Manpower Deployment</span>
+                     <span class="skill-pill">Cash reconciliation</span>
+                     <span class="skill-pill">Food Safety (SFDA)</span>
+                     <span class="skill-pill">POS Systems</span>
+                  </div>
+               </div>
+               <div class="card">
+                  <div class="section-title"><i class="fas fa-graduation-cap"></i> Education</div>
+                  <div class="edu-item">
+                     <strong>Bachelor in Psychology (Hons)</strong>
+                     <div class="edu-detail">Magadh University, Gaya (India)</div>
+                  </div>
+                  <div class="edu-item">
+                     <strong>Diploma – Instrument Technician</strong>
+                     <div class="edu-detail">Certificate (Technical board)</div>
+                  </div>
+               </div>
+               <div class="card">
+                  <div class="section-title"><i class="fas fa-language"></i> Languages</div>
+                  <div class="lang-row">
+                     <span>English (fluent)</span> <span>Hindi</span> <span>Arabic (convers.)</span> <span>Urdu</span>
+                  </div>
+               </div>
+               <div class="card">
+                  <div class="section-title"><i class="fas fa-id-card"></i> KSA Credentials</div>
+                  <p><strong>Iqama:</strong> 2434-9082-79 (transferable) <br>
+                     <strong>Passport:</strong> C8792993 (Indian) <br>
+                     <strong>Status:</strong> Married, residing in Al Khobar
+                  </p>
+               </div>
+            </div>
+            <!-- RIGHT COLUMN: experience with dates -->
+            <div class="right-col">
+               <div class="card">
+                  <div class="section-title"><i class="fas fa-briefcase"></i> Professional experience – KSA</div>
+                  <div class="exp-entry">
+                     <div class="exp-header">
+                        <h3>Assistant General Manager</h3>
+                        <span class="exp-date">Jan 2025 – Present</span>
+                     </div>
+                     <div class="exp-sub">Cravia Arabia · Al Khobar</div>
+                     <ul class="exp-duties">
+                        <li>Direct daily operations for multiple outlets and camps, aligning with KPIs, municipality standards (Tadheem, Baladiyah) and corporate governance.</li>
+                        <li>Strategic control of labor & food costs; achieved 12% reduction in operational waste while maintaining SFDA compliance.</li>
+                        <li>Lead internal audits & ensure 100% compliance with civil defense, Saudi labor camp rules and environmental health.</li>
+                        <li>Implement digital bookkeeping for maintenance requests, fuel logs, and petty cash – integrated with MS Excel dashboards.</li>
+                     </ul>
+                  </div>
+                  <div class="exp-entry">
+                     <div class="exp-header">
+                        <h3>Accommodation Incharge / Camp Boss</h3>
+                        <span class="exp-date">Mar 2020 – Dec 2021</span>
+                     </div>
+                     <div class="exp-sub">Leading workforce housing · Eastern Province</div>
+                     <ul class="exp-duties">
+                        <li>Managed end-to-end operations of a large labour camp (150+ residents) for a contracting company in Jubail / Dammam.</li>
+                        <li><strong>Occupancy & room inventory:</strong> maintained real-time vacancy logs, allocation for new arrivals, check-in/out registers – 100% audit readiness.</li>
+                        <li><strong>Fleet supervision:</strong> coordinated 12 buses & light vehicles for staff transport; monitored fuel consumption, driver schedules, preventive maintenance and compliance with Saudi traffic rules.</li>
+                        <li><strong>Maintenance & facility:</strong> supervised preventive maintenance (HVAC, electrical, plumbing) with monthly PPM schedules; reduced breakdown calls by 20%.</li>
+                        <li><strong>Petty cash & bookkeeping:</strong> managed camp administrative expenses, utility bills, and food supply invoices; reported to finance with full transparency.</li>
+                        <li><strong>Security & welfare:</strong> enforced camp discipline, visitor policy, and fire safety drills in line with civil defense. Liaised with PRO for iqama renewal, medical insurance and resident documentation.</li>
+                     </ul>
+                  </div>
+                  <div class="exp-entry">
+                     <div class="exp-header">
+                        <h3>Supervisor / Shift Manager</h3>
+                        <span class="exp-date">Jan 2022 – Jan 2025</span>
+                     </div>
+                     <div class="exp-sub">Cravia Arabia · Multiple sites (KSA)</div>
+                     <ul class="exp-duties">
+                        <li>Led shifts of up to 30 crew; optimized manpower allocation based on peak hours and event schedules.</li>
+                        <li>Performed daily cash reconciliation, sales reporting and inventory checks – zero discrepancies in 24 consecutive months.</li>
+                        <li>Monitored food safety (HACCP) and hygiene standards, passed all surprise municipality inspections.</li>
+                        <li>Supported camp accommodation logistics by coordinating transport and ad-hoc maintenance needs.</li>
+                     </ul>
+                  </div>
+                  <div class="exp-entry">
+                     <div class="exp-header">
+                        <h3>Service Crew</h3>
+                        <span class="exp-date">Aug 2017 – Mar 2020</span>
+                     </div>
+                     <div class="exp-sub">Cravia Arabia (Saudi operations)</div>
+                     <ul class="exp-duties">
+                        <li>Executed front-line operations in high‑volume F&B outlets; maintained POS accuracy and customer service standards.</li>
+                        <li>Supported back-of-house with food preparation and stock rotation; strict adherence to SFDA guidelines.</li>
+                     </ul>
+                  </div>
+                  <!-- The green market-note box has been removed completely -->
+               </div>
+            </div>
+         </div>
+         <div style="background: white; border-top: 1px solid #e0e7f0; text-align: center; padding: 12px; font-size: 0.7rem; color: #6a7e99;">
+            <i class="fas fa-print"></i> Print to PDF – Mohammad Talib Khan · updated with full chronology
+         </div>
+      </div>
+   </body>
+</html>
